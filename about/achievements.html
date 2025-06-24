@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mafanikio Yetu - Shule Yetu</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+    body {
+      background: linear-gradient(to right, #eef6ff, #dbefff);
+      font-family: 'Montserrat', sans-serif;
+      color: #003366;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0056b3, #003366);
+      color: white;
+      padding: 80px 20px 60px;
+      text-align: center;
+      border-radius: 0 0 40px 40px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+      margin-bottom: 60px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    header h1 {
+      font-size: 3.6rem;
+      margin-bottom: 0.3rem;
+      text-shadow: 0 3px 6px rgba(0,0,0,0.3);
+    }
+
+    header p {
+      font-size: 1.3rem;
+      font-style: italic;
+      font-weight: 500;
+      color: #cbd8f7;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    }
+
+    main.container {
+      max-width: 900px;
+    }
+
+    .achievement-section {
+      margin-bottom: 70px;
+      padding-bottom: 40px;
+      border-bottom: 2px solid #c6d4ff;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    .achievement-section:nth-child(2) {
+      animation-delay: 0.3s;
+    }
+    .achievement-section:nth-child(3) {
+      animation-delay: 0.6s;
+    }
+
+    .achievement-title {
+      font-weight: 800;
+      font-size: 2.2rem;
+      margin-bottom: 25px;
+      border-left: 6px solid #0056b3;
+      padding-left: 15px;
+      color: #002244;
+      letter-spacing: 0.07em;
+      text-transform: capitalize;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    }
+
+    .achievement-desc {
+      font-size: 1.15rem;
+      margin-bottom: 30px;
+      line-height: 1.7;
+      color: #222f5b;
+      letter-spacing: 0.02em;
+      text-align: justify;
+    }
+
+    .carousel-inner img {
+      height: 320px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      user-select: none;
+      transition: transform 0.3s ease;
+    }
+
+    .carousel-inner img:hover {
+      transform: scale(1.05);
+      filter: brightness(1.1);
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      filter: invert(1);
+      width: 45px;
+      height: 45px;
+      opacity: 0.9;
+      transition: opacity 0.3s;
+    }
+
+    .carousel-control-prev-icon:hover,
+    .carousel-control-next-icon:hover {
+      opacity: 1;
+    }
+
+    .btn-contact {
+      display: inline-block;
+      background-color: #003366;
+      color: white;
+      font-weight: 700;
+      padding: 14px 36px;
+      border-radius: 40px;
+      box-shadow: 0 8px 25px rgba(0, 51, 102, 0.6);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+      font-size: 1.1rem;
+      user-select: none;
+    }
+
+    .btn-contact:hover {
+      background-color: #002244;
+      box-shadow: 0 12px 40px rgba(0, 34, 68, 0.8);
+      text-decoration: none;
+      color: #cbd8f7;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.8rem;
+      }
+      header p {
+        font-size: 1.1rem;
+      }
+      .achievement-title {
+        font-size: 1.8rem;
+      }
+      .carousel-inner img {
+        height: 220px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mafanikio Yetu</h1>
+    <p>Tunajivunia mafanikio makubwa yaliyoleta sifa na hadhi kwa shule yetu.</p>
+  </header>
+
+  <main class="container">
+
+    <!-- Achievement 1 -->
+    <section class="achievement-section">
+      <h2 class="achievement-title">Shule Bora Zaidi Mkoa wa Mbeya (2024)</h2>
+      <p class="achievement-desc">
+        Katika mwaka 2024, shule yetu ilitangazwa kuwa shule bora zaidi Mkoa wa Mbeya kutokana na matokeo bora ya mitihani ya kitaifa na usimamizi bora wa masomo na maadili.
+      </p>
+      <div id="carouselAchievement1" class="carousel slide mb-4" data-bs-ride="carousel" data-bs-interval="4000">
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <img src="../images/bg.jpg" class="d-block w-100" alt="Shule Bora Zaidi Mbeya" />
+          </div>
+          <div class="carousel-item">
+            <img src="../images/logo.jpg" class="d-block w-100" alt="Mgeni rasmi akizindua" />
+          </div>
+          <div class="carousel-item">
+            <img src="../images/bg.jpg" class="d-block w-100" alt="Wanafunzi wakisherehekea" />
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselAchievement1" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselAchievement1" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Achievement 2 -->
+    <section class="achievement-section">
+      <h2 class="achievement-title">Matokeo Bora Kitaifa (2023)</h2>
+      <p class="achievement-desc">
+        Wanafunzi wa shule yetu walipata matokeo bora kitaifa mwaka 2023, huku wakiongoza katika somo la Hisabati na Sayansi, na kuchaguliwa kuwa shule yenye ufaulu wa juu zaidi.
+      </p>
+      <div id="carouselAchievement2" class="carousel slide mb-4" data-bs-ride="carousel" data-bs-interval="4000">
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <img src="../images/logo.jpg" class="d-block w-100" alt="Wanafunzi wakifanya mtihani" />
+          </div>
+          <div class="carousel-item">
+            <img src="../images/bg.jpg" class="d-block w-100" alt="Sherehe za ufaulu" />
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselAchievement2" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselAchievement2" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Achievement 3 -->
+    <section class="achievement-section">
+      <h2 class="achievement-title">Shule Inayozingatia Maadili na Nidhamu</h2>
+      <p class="achievement-desc">
+        Shule yetu imekuwa mfano wa kuigwa kwa nidhamu bora na maadili mema, ikizawadiwa na Wizara ya Elimu kama shule yenye mazingira safi na salama kwa wanafunzi.
+      </p>
+      <div id="carouselAchievement3" class="carousel slide mb-4" data-bs-ride="carousel" data-bs-interval="4000">
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <img src="../images/bg.jpg" class="d-block w-100" alt="Matendo ya wanafunzi" />
+          </div>
+          <div class="carousel-item">
+            <img src="../images/logo.jpg" class="d-block w-100" alt="Shule safi" />
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselAchievement3" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselAchievement3" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <div class="text-center mb-5">
+      <a href="contact.html" class="btn-contact">Wasiliana nasi kwa maelezo zaidi</a>
+    </div>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mbalizi Secondary School</title>
+
+  <!-- Bootstrap CSS & Font Awesome -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f7fa;
+      color: #333;
+    }
+
+    .navbar {
+      background-color: #ffffff;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 1.6rem;
+      color: #0d6efd;
+    }
+
+    .hero {
+      background: url('images/bg.jpg') center center/cover no-repeat;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      color: white;
+      text-align: center;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero .content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    .dashboards {
+      padding: 50px 15px;
+      background-color: #ffffff;
+    }
+
+    .dash-card {
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 30px 20px;
+      transition: all 0.3s ease-in-out;
+      background: linear-gradient(to right, #e6f0ff, #ffffff);
+    }
+
+    .dash-card:hover {
+      transform: translateY(-8px);
+      background: linear-gradient(to right, #d0e3ff, #eaf2ff);
+    }
+
+    .dash-card i {
+      font-size: 40px;
+      color: #0d6efd;
+      margin-bottom: 15px;
+    }
+
+    .dash-card h5 {
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+
+    footer {
+      padding: 20px;
+      background-color: #0d6efd;
+      color: white;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg shadow-sm sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="images/logo.jpg" height="60" class="me-2"> Mbalizi Sec. School
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarMain">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#">Nyumbani</a></li>
+        <li class="nav-item"><a class="nav-link" href="about/index.html">Kuhusu</a></li>
+        <li class="nav-item"><a class="nav-link" href="academics/index.html">Mafunzo</a></li>
+        <li class="nav-item"><a class="nav-link" href="admissions/index.html">Kujiunga</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery/index.html">Matukio</a></li>
+        <li class="nav-item"><a class="nav-link" href="news/index.html">Habari</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact/index.html">Mawasiliano</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="content">
+    <h1>Karibu Mbalizi Secondary School</h1>
+    <p class="lead">Tunaamini katika Elimu Bora na Maadili</p>
+  </div>
+</section>
+
+<!-- Dashboards -->
+<section class="dashboards">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4 col-sm-6">
+        <a href="index.html" class="text-decoration-none text-dark">
+          <div class="dash-card">
+            <i class="fa fa-home"></i>
+            <h5>Nyumbani</h5>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <a href="about/index.html" class="text-decoration-none text-dark">
+          <div class="dash-card">
+            <i class="fa fa-users"></i>
+            <h5>Kuhusu</h5>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <a href="academics/index.html" class="text-decoration-none text-dark">
+          <div class="dash-card">
+            <i class="fa fa-book"></i>
+            <h5>Mafunzo</h5>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <a href="admissions/index.html" class="text-decoration-none text-dark">
+          <div class="dash-card">
+            <i class="fa fa-user-plus"></i>
+            <h5>Kujiunga</h5>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <a href="gallery/index.html" class="text-decoration-none text-dark">
+          <div class="dash-card">
+            <i class="fa fa-camera-retro"></i>
+            <h5>Matukio</h5>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <a href="news/index.html" class="text-decoration-none text-dark">
+          <div class="dash-card">
+            <i class="fa fa-newspaper"></i>
+            <h5>Habari</h5>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <a href="contact/index.html" class="text-decoration-none text-dark">
+          <div class="dash-card">
+            <i class="fa fa-phone"></i>
+            <h5>Mawasiliano</h5>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Mbalizi Secondary School. Haki Zote Zimehifadhiwa.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

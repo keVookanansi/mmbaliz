@@ -1,0 +1,41 @@
+/* responsive.css - Mtindo wa tovuti kwa simu na tablet */
+
+/* Screen < 991.98px (Tablets and below) */
+@media (max-width: 991.98px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .btn-main {
+    font-size: 1rem;
+    padding: 8px 20px;
+  }
+}
+
+/* Screen < 767.98px (Phones and below) */
+@media (max-width: 767.98px) {
+  .hero {
+    height: 70vh;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  .btn-main {
+    font-size: 0.9rem;
+    padding: 7px 18px;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+}
