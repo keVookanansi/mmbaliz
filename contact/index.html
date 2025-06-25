@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mawasiliano - Mbalizi Secondary School</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+    }
+    .contact-info i {
+      font-size: 1.5rem;
+      color: #0d6efd;
+      margin-right: 10px;
+    }
+    .contact-section {
+      background: #fff;
+      border-radius: 15px;
+      padding: 40px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .map iframe {
+      border-radius: 15px;
+      width: 100%;
+      height: 300px;
+    }
+    .form-control, .btn {
+      border-radius: 10px;
+    }
+    .btn {
+      padding: 10px 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container py-5">
+    <h2 class="text-center mb-4">Wasiliana Nasi</h2>
+
+    <div class="row g-4">
+      <!-- Contact Info -->
+      <div class="col-md-5">
+        <div class="contact-section">
+          <h4 class="mb-3">Taarifa za Mawasiliano</h4>
+          <p class="contact-info"><i class="fas fa-map-marker-alt"></i> Mbalizi Secondary School, Mbeya, Tanzania</p>
+          <p class="contact-info"><i class="fas fa-phone"></i> +255 758 123 456</p>
+          <p class="contact-info"><i class="fas fa-envelope"></i> mbalizisecondary@gmail.com</p>
+          <p class="contact-info"><i class="fas fa-globe"></i> www.mbalizisecondary.ac.tz</p>
+          <hr>
+          <div class="map mt-3">
+            <iframe src="https://maps.google.com/maps?q=Mbalizi%20Mbeya&t=&z=13&ie=UTF8&iwloc=&output=embed" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="col-md-7">
+        <div class="contact-section">
+          <h4 class="mb-3">Tuma Ujumbe</h4>
+          <form action="mailto:mbalizisecondary@gmail.com" method="post" enctype="text/plain">
+            <div class="mb-3">
+              <label for="name" class="form-label">Jina Lako</label>
+              <input type="text" class="form-control" id="name" name="name" required placeholder="Jina kamili">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Barua Pepe</label>
+              <input type="email" class="form-control" id="email" name="email" required placeholder="example@email.com">
+            </div>
+            <div class="mb-3">
+              <label for="subject" class="form-label">Mada</label>
+              <input type="text" class="form-control" id="subject" name="subject" placeholder="Mada ya ujumbe">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Ujumbe Wako</label>
+              <textarea class="form-control" id="message" name="message" rows="5" required placeholder="Andika ujumbe wako hapa..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Tuma Ujumbe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center mt-5 mb-3">
+    <small>&copy; 2025 Mbalizi Secondary School - All rights reserved.</small>
+  </footer>
+
+</body>
+</html>
