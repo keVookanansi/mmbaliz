@@ -36,12 +36,18 @@
       text-align: center;
     }
 
-    .hero img {
-      object-fit: cover;
-      top: 0;
-      left: 0;
-      z-index: -1;
-    }
+ .hero img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
 
     .hero .content {
       position: relative;
@@ -72,7 +78,7 @@
 
     .dashboards {
       padding: 50px 15px;
-      background-color: #ffffff;
+      background-color: #5377eb;
     }
 
     .dash-card {
@@ -80,7 +86,7 @@
       box-shadow: 0 12px 32px rgba(0,0,0,0.1);
       text-align: center;
       padding: 40px 25px;
-      background: #ffffff;
+      background: #3fd6cf;
       transition: transform 0.1s ease, background 0.1s ease;
     }
 
@@ -140,15 +146,15 @@
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg shadow-sm sticky-top">
-  <div class="container-fluid">
-    <a class="navbar-brand d-flex align-items-center" href="#">
-      <img src="images/logo.jpg" height="60" class="me-2"> Mbalizi Sec. School
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+    <!-- Toggler button on the left -->
+    <button class="navbar-toggler order-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarMain">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+    <!-- Navbar links center -->
+    <div class="collapse navbar-collapse justify-content-center order-2" id="navbarMain">
+      <ul class="navbar-nav mb-2 mb-lg-0">
         <li class="nav-item"><a class="nav-link" href="#">Nyumbani</a></li>
         <li class="nav-item"><a class="nav-link" href="about/index.html">Kuhusu</a></li>
         <li class="nav-item"><a class="nav-link" href="academics/index.html">Mafunzo</a></li>
@@ -158,6 +164,12 @@
         <li class="nav-item"><a class="nav-link" href="contact/index.html">Mawasiliano</a></li>
       </ul>
     </div>
+
+    <!-- Logo on the right -->
+    <a class="navbar-brand d-flex align-items-center order-3 ms-auto" href="#">
+      <span class="me-2">Mbalizi Sec. School</span>
+      <img src="images/logo.jpg" height="120" class="d-inline-block align-top" alt="Logo">
+    </a>
   </div>
 </nav>
 
