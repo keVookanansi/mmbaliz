@@ -152,17 +152,15 @@
     left: -100%;
   }
 }
- /* Maneno yawe na rangi ya blue */
+ 
+  /* Maandishi yote: white */
   .custom-caption h5,
+  .custom-caption h6,
   .custom-caption p {
-    color: #007bff;
-  }
- .custom-caption p {
     color: #fff !important;
   }
 
-
-  /* On mobile, center kabisa na yasibane */
+  /* On mobile: center kabisa */
   @media (max-width: 576px) {
     .custom-caption {
       position: absolute;
@@ -172,7 +170,7 @@
       bottom: auto !important;
       text-align: center;
       width: 100%;
-      padding: 0 15px; /* kidogo ili yasiguse pembeni */
+      padding: 0 15px;
     }
   }
   </style>
@@ -213,6 +211,7 @@
   </div>
 </nav>
 
+<!-- Hero Carousel -->
 <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
 
@@ -221,7 +220,7 @@
       <img src="images/student1.jpg" class="d-block w-100" alt="Student 1">
       <div class="carousel-caption d-block custom-caption">
         <h5>🌟 Karibu Mbalizi Secondary School 🌟</h5>
-        <p>Elimu bora, Maadili, na Mustakabali wa Ndoto zako!</p>
+        <h6>Elimu bora, Maadili, na Mustakabali wa Ndoto zako!</h6>
       </div>
     </div>
 
@@ -230,7 +229,7 @@
       <img src="images/student2.jpg" class="d-block w-100" alt="Student 2">
       <div class="carousel-caption d-block custom-caption">
         <h5>💡 Tunalea Viongozi wa Kesho</h5>
-        <p>Jiandae kuwa Kiongozi mwenye Maadili na Maarifa ya hali ya juu.</p>
+        <h6>Jiandae kuwa Kiongozi mwenye Maadili na Maarifa ya hali ya juu.</h6>
       </div>
     </div>
 
@@ -239,7 +238,7 @@
       <img src="images/student3.jpg" class="d-block w-100" alt="Student 3">
       <div class="carousel-caption d-block custom-caption">
         <h5>📈 Mafanikio Yako, Kipaumbele Chetu</h5>
-        <p>Jiunge nasi leo na anza safari ya mafanikio.</p>
+        <h6>Jiunge nasi leo na anza safari ya mafanikio.</h6>
       </div>
     </div>
 
@@ -252,14 +251,6 @@
   <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
   </button>
-</div>
-<!-- Marquee Welcome Message -->
-<div class="container my-4">
-  <div class="bg-primary text-white p-2 rounded shadow-sm position-relative overflow-hidden" style="height: 50px;">
-    <div class="position-absolute animate__animated animate__slideInLeft" style="white-space: nowrap; animation: scroll-left 15s linear infinite;">
-      <strong>👋 Karibu Mbalizi Secondary School - Elimu, Nidhamu na Ufanisi!</strong>
-    </div>
-  </div>
 </div>
 
 <!-- Dashboard Section -->
