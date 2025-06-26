@@ -78,7 +78,7 @@
       bottom: 0;
       left: 0;
       right: 0;
-      background: rgba(0, 0, 0, 0.3);
+      background: rgba(0, 0, 0, 0.0);
       z-index: 1;
     }
 
@@ -103,7 +103,7 @@
 
     .dash-card:hover {
       transform: translateY(-10px);
-      box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+      box-shadow: 0 20px 30px rgba(0,0,0,0.4);
     }
 
     .dash-card img {
@@ -144,6 +144,15 @@
       transform: scale(1.2);
       opacity: 0.8;
     }
+  @keyframes scroll-left {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -202,6 +211,15 @@
   <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
   </button>
+</div>
+
+<!-- Marquee Welcome Message -->
+<div class="container my-4">
+  <div class="bg-primary text-white p-2 rounded shadow-sm position-relative overflow-hidden" style="height: 50px;">
+    <div class="position-absolute animate__animated animate__slideInLeft" style="white-space: nowrap; animation: scroll-left 15s linear infinite;">
+      <strong>👋 Karibu Mbalizi Secondary School - Elimu, Nidhamu na Ufanisi!</strong>
+    </div>
+  </div>
 </div>
 
 <!-- Dashboard Section -->
