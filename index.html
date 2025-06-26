@@ -158,14 +158,23 @@
 <body>
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg">
-  <div class="container-fluid">
-    <a class="navbar-brand d-flex align-items-center" href="#">
-      <img src="images/logo.jpg" width="102" height="95" class="rounded-circle me-2" alt="Logo">
-      MBALIZI<br> HIGH SCHOOL
-    </a>
-    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <i class="fas fa-bars"></i>
-    </button>
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+
+    <!-- Kundi la: Toggler + Jina la Shule + Logo -->
+    <div class="d-flex align-items-center">
+      <!-- Toggler - upande wa kushoto -->
+      <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Jina la shule katikati -->
+      <span class="navbar-text fw-bold fs-5 me-3">MBALIZI HIGH SCHOOL</span>
+
+      <!-- Logo - upande wa kulia mwa jina -->
+      <img src="images/logo.jpg" width="70" height="70" class="rounded-circle" alt="Logo">
+    </div>
+
+    <!-- Menu links katikati -->
     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item"><a class="nav-link" href="#">Nyumbani</a></li>
@@ -177,6 +186,7 @@
         <li class="nav-item"><a class="nav-link" href="contact/index.html">Mawasiliano</a></li>
       </ul>
     </div>
+
   </div>
 </nav>
 
