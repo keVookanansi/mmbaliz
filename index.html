@@ -152,6 +152,25 @@
     left: -100%;
   }
 }
+/* Ondoa blur au background ya nyuma ya maandishi */
+.carousel-caption {
+  background: none !important;
+}
+
+/* Rekebisha position ya maandishi kwenye simu tu */
+@media (max-width: 576px) {
+  .custom-caption {
+    bottom: 10% !important;
+  }
+
+  .custom-caption h5 {
+    font-size: 1.1rem;
+  }
+
+  .custom-caption p {
+    font-size: 0.95rem;
+  }
+}
 
   </style>
 </head>
@@ -194,28 +213,37 @@
 <!-- Hero Carousel -->
 <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
+    
+    <!-- Slide 1 -->
     <div class="carousel-item active">
-      <img src="images/student1.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-block">
-        <h5>🌟 Karibu Mbalizi Secondary School 🌟</h5>
-        <p>Elimu bora, Maadili, na Mustakabali wa Ndoto zako!</p>
+      <img src="images/student1.jpg" class="d-block w-100" alt="Student 1">
+      <div class="carousel-caption d-block custom-caption">
+        <h5 style="color: #007bff;">🌟 Karibu Mbalizi Secondary School 🌟</h5>
+        <p style="color: #007bff;">Elimu bora, Maadili, na Mustakabali wa Ndoto zako!</p>
       </div>
     </div>
+
+    <!-- Slide 2 -->
     <div class="carousel-item">
-      <img src="images/student2.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-block">
-        <h5>💡 Tunalea Viongozi wa Kesho</h5>
-        <p>Jiandae kuwa Kiongozi mwenye Maadili na Maarifa ya hali ya juu.</p>
+      <img src="images/student2.jpg" class="d-block w-100" alt="Student 2">
+      <div class="carousel-caption d-block custom-caption">
+        <h5 style="color: #007bff;">💡 Tunalea Viongozi wa Kesho</h5>
+        <p style="color: #007bff;">Jiandae kuwa Kiongozi mwenye Maadili na Maarifa ya hali ya juu.</p>
       </div>
     </div>
+
+    <!-- Slide 3 -->
     <div class="carousel-item">
-      <img src="images/student3.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-block">
-        <h5>📈 Mafanikio Yako, Kipaumbele Chetu</h5>
-        <p>Jiunge nasi leo na anza safari ya mafanikio.</p>
+      <img src="images/student3.jpg" class="d-block w-100" alt="Student 3">
+      <div class="carousel-caption d-block custom-caption">
+        <h5 style="color: #007bff;">📈 Mafanikio Yako, Kipaumbele Chetu</h5>
+        <p style="color: #007bff;">Jiunge nasi leo na anza safari ya mafanikio.</p>
       </div>
     </div>
+
   </div>
+
+  <!-- Controls -->
   <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
   </button>
