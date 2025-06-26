@@ -152,7 +152,25 @@
     left: -100%;
   }
 }
+ /* Maneno yawe na rangi ya blue */
+  .custom-caption h5,
+  .custom-caption p {
+    color: #007bff;
+  }
 
+  /* On mobile, center kabisa na yasibane */
+  @media (max-width: 576px) {
+    .custom-caption {
+      position: absolute;
+      top: 50% !important;
+      left: 50% !important;
+      transform: translate(-50%, -50%) !important;
+      bottom: auto !important;
+      text-align: center;
+      width: 100%;
+      padding: 0 15px; /* kidogo ili yasiguse pembeni */
+    }
+  }
   </style>
 </head>
 <body>
@@ -191,16 +209,15 @@
   </div>
 </nav>
 
-<!-- Hero Carousel -->
 <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
-    
+
     <!-- Slide 1 -->
     <div class="carousel-item active">
       <img src="images/student1.jpg" class="d-block w-100" alt="Student 1">
       <div class="carousel-caption d-block custom-caption">
-        <h5 style="color: #007bff;">🌟 Karibu Mbalizi Secondary School 🌟</h5>
-        <p style="color: #007bff;">Elimu bora, Maadili, na Mustakabali wa Ndoto zako!</p>
+        <h5>🌟 Karibu Mbalizi Secondary School 🌟</h5>
+        <p>Elimu bora, Maadili, na Mustakabali wa Ndoto zako!</p>
       </div>
     </div>
 
@@ -208,8 +225,8 @@
     <div class="carousel-item">
       <img src="images/student2.jpg" class="d-block w-100" alt="Student 2">
       <div class="carousel-caption d-block custom-caption">
-        <h5 style="color: #007bff;">💡 Tunalea Viongozi wa Kesho</h5>
-        <p style="color: #007bff;">Jiandae kuwa Kiongozi mwenye Maadili na Maarifa ya hali ya juu.</p>
+        <h5>💡 Tunalea Viongozi wa Kesho</h5>
+        <p>Jiandae kuwa Kiongozi mwenye Maadili na Maarifa ya hali ya juu.</p>
       </div>
     </div>
 
@@ -217,8 +234,8 @@
     <div class="carousel-item">
       <img src="images/student3.jpg" class="d-block w-100" alt="Student 3">
       <div class="carousel-caption d-block custom-caption">
-        <h5 style="color: #007bff;">📈 Mafanikio Yako, Kipaumbele Chetu</h5>
-        <p style="color: #007bff;">Jiunge nasi leo na anza safari ya mafanikio.</p>
+        <h5>📈 Mafanikio Yako, Kipaumbele Chetu</h5>
+        <p>Jiunge nasi leo na anza safari ya mafanikio.</p>
       </div>
     </div>
 
@@ -232,7 +249,6 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
   </button>
 </div>
-
 <!-- Marquee Welcome Message -->
 <div class="container my-4">
   <div class="bg-primary text-white p-2 rounded shadow-sm position-relative overflow-hidden" style="height: 50px;">
